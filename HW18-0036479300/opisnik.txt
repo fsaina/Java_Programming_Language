@@ -1,0 +1,33 @@
+desert.jpg
+Pustinja sa drvom
+pustinja
+desert.jpg
+Pustinja 2
+pustinja
+duck.jpg
+Patka u vodi
+zivotinja, patka
+duck2.jpg
+Patka takoder u vodi
+zivotinja, patka
+image.jpg
+Planina sa jezerom
+planina, jezero
+imagg.jpg
+Planina sa jezerom
+planina
+lake.jpg
+Jezero
+jezero
+moun1.jpg
+Planina iz brda
+planina
+mount2.jpg
+Planina sa zelenilom
+planina
+mount3.jpg
+Planina i jezero
+planina, jezero
+cow.jpg
+Krava
+zivotinja, krava

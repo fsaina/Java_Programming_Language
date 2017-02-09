@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0"
+         metadata-complete="false">
+
+    <display-name>Moja treća aplikacija</display-name>
+    <description>
+        Treća aplikacija
+    </description>
+
+</web-app>
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+
+<!--<web-app xmlns="http://java.sun.com/xml/ns/javaee"-->
+         <!--xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+         <!--xsi:schemaLocation="http://java.sun.com/xml/ns/javaee-->
+                      <!--http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"-->
+         <!--version="3.0"-->
+         <!--metadata-complete="true">-->
+
+    <!--<display-name>Archetype Created Web Application</display-name>-->
+
+    <!--<servlet>-->
+        <!--<servlet-name>colorServlet</servlet-name>-->
+        <!--<servlet-class>hr.fer.zemris.web.color.ColorServlet</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>colorServlet</servlet-name>-->
+        <!--<url-pattern>/setColor</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <!--<servlet>-->
+        <!--<servlet-name>trigonometricServlet</servlet-name>-->
+        <!--<servlet-class>hr.fer.zemris.web.trigonometry.TrigonometricServlet</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>trigonometricServlet</servlet-name>-->
+        <!--<url-pattern>/trigonometry</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <!--<servlet>-->
+        <!--<servlet-name>osUsageImageServlet</servlet-name>-->
+        <!--<servlet-class>hr.fer.zemris.web.reportImage.OsUsageImageServlet</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>osUsageImageServlet</servlet-name>-->
+        <!--<url-pattern>/reportImage</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+
+    <!--<servlet>-->
+        <!--<servlet-name>powersServlet</servlet-name>-->
+        <!--<servlet-class>hr.fer.zemris.web.powers.PowersServlet</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>powersServlet</servlet-name>-->
+        <!--<url-pattern>/powers</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <!--<servlet>-->
+        <!--<servlet-name>glasanjeServlet</servlet-name>-->
+        <!--<servlet-class>hr.fer.zemris.web.glasanje.GlasanjeServlet</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>glasanjeServlet</servlet-name>-->
+        <!--<url-pattern>/glasanje</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <!--<servlet>-->
+        <!--<servlet-name>glasanjeGlasajServlet</servlet-name>-->
+        <!--<servlet-class>hr.fer.zemris.web.glasanje.GlasanjeGlasajServlet</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>glasanjeGlasajServlet</servlet-name>-->
+        <!--<url-pattern>/glasanje-glasaj</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <!--<servlet>-->
+        <!--<servlet-name>glasanjeRezultatiServlet</servlet-name>-->
+        <!--<servlet-class>hr.fer.zemris.web.glasanje.GlasanjeRezultatiServlet</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>glasanjeRezultatiServlet</servlet-name>-->
+        <!--<url-pattern>/glasanje-rezultati</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <!--<servlet>-->
+        <!--<servlet-name>glasanjeGrafika</servlet-name>-->
+        <!--<servlet-class>hr.fer.zemris.web.glasanje.GlasanjeGrafika</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>glasanjeGrafika</servlet-name>-->
+        <!--<url-pattern>/glasanje-grafika</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <!--<servlet>-->
+        <!--<servlet-name>glasanjeXls</servlet-name>-->
+        <!--<servlet-class>hr.fer.zemris.web.glasanje.GlasanjeXLSServlet</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>glasanjeXls</servlet-name>-->
+        <!--<url-pattern>/glasanje-xls</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <!--<listener>-->
+        <!--<listener-class>hr.fer.zemris.web.listeners.ContextListener</listener-class>-->
+    <!--</listener>-->
+
+
+<!--</web-app>-->

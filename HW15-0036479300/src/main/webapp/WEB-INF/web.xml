@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0"
+         metadata-complete="false">
+
+    <display-name>Web aplikacija s JPA</display-name>
+    <description>
+        Web aplikacija s JPA
+    </description>
+
+    <servlet>
+    <servlet-name>register</servlet-name>
+    <servlet-class>hr.fer.zemris.java.tecaj_13.web.servlets.RegistrationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>register</servlet-name>
+    <url-pattern>/servleti/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>mainPage</servlet-name>
+    <servlet-class>hr.fer.zemris.java.tecaj_13.web.servlets.MainPageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>mainPage</servlet-name>
+    <url-pattern>/servleti/main</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>indexPage</servlet-name>
+    <servlet-class>hr.fer.zemris.java.tecaj_13.web.servlets.IndexServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>indexPage</servlet-name>
+    <url-pattern>/index.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>authorPage</servlet-name>
+    <servlet-class>hr.fer.zemris.java.tecaj_13.web.servlets.AuthorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>authorPage</servlet-name>
+    <url-pattern>/servleti/author/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>Entryhandler</servlet-name>
+    <servlet-class>hr.fer.zemris.java.tecaj_13.web.servlets.entry.EntryHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>Entryhandler</servlet-name>
+    <url-pattern>/servleti/entry/post</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+    <servlet-name>CommentEntry</servlet-name>
+    <servlet-class>hr.fer.zemris.java.tecaj_13.web.servlets.CommentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>CommentEntry</servlet-name>
+    <url-pattern>/servleti/comment/post</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>hr.fer.zemris.java.tecaj_13.web.servlets.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/session/logout</url-pattern>
+    </servlet-mapping>
+
+
+
+</web-app>

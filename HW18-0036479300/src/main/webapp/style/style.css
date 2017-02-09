@@ -1,0 +1,40 @@
+html {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+img.image {
+	float: left;
+	margine: 5px 5px 5px 5px;
+	border: 2px 2px 2px 2px black;
+}
+
+
+.button {
+	width: 120px;
+	border: none;
+	height: 100px;
+	padding: 5px 5px;
+	margin: 3px 3px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	background-color: blue;
+	font-size: 16px;
+	border: none;
+	color: white;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+a {
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000000;
+}

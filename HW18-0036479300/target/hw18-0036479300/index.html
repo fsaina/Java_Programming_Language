@@ -1,0 +1,58 @@
+<!--Parts of this html file are from the professors lectures-->
+<html>
+<head>
+    <title>Galerija</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script type="text/javascript">
+        window.onload = function loadImages() {
+            var xmlhttp;
+            if (window.XMLHttpRequest) {
+                // code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            } else {
+                // code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    var text = xmlhttp.responseText;
+                    // 				var elems = text.split("#");
+                    document.getElementById("photoButtons").innerHTML = text;
+                }
+            }
+
+            xmlhttp.open("GET", "servlets/tags?dummy=" + Math.random(), true);
+
+            xmlhttp.send();
+        }
+
+        function getPic(tagName) {
+
+            var xmlhttp;
+            if (window.XMLHttpRequest) {
+                // code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            } else {
+                // code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    var text = xmlhttp.responseText;
+                    document.getElementById("thumbnails").innerHTML = text;
+                }
+            }
+
+
+            xmlhttp.open("GET", "servlets/thumbnails?tag=" + tagName, true);
+            xmlhttp.send();
+        }
+
+
+    </script>
+</head>
+<body>
+<div id="thumbnails"></div>
+<div id="photoButtons"></div>
+</body>
+</html>

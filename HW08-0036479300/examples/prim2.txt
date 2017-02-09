@@ -1,0 +1,53 @@
+            jump @pocet
+@brojac:	DEFINT 5				; ovo je konstanta na adresi 1
+@nula:		DEFINT 0
+
+@pocet:     load r0, @nula
+            call @por
+            iinput 100
+            jumpIfTrue @racun
+            call @writeErr
+            jump @pocet
+
+@racun:     move r1, [r0+100]
+            push r1
+            call @count
+            halt
+
+@count:     move r2, [r15+2]
+            move r3, 5
+            call @sljedbr
+@loop:      increment r2
+            echo r2
+            call @newline
+            decrement r3
+            testEquals r0, r3
+            jumpIfTrue @break
+            jump @loop
+
+@break:     ret
+
+@sljedbr:   load r5, @sljed
+			echo r5
+			ret
+
+@newline:   load r5, @new
+			echo r5
+			ret
+
+@por:		load r5, @poruka
+			echo r5
+			ret
+
+@writeErr:	load r5, @greska
+			echo r5
+			ret
+
+
+@poruka:    DEFSTR "Unesite pocetni broj: "
+@greska:    DEFSTR "Unos nije moguce protumaciti kao cijeli broj.\n"
+@new:       DEFSTR "\n"
+@sljed:     DEFSTR "Sljedecih 5 brojeva je:\n"
+
+            RESERVE:19				; rezerviramo 19 lokacija u memoriji
+@stackTop:	RESERVE

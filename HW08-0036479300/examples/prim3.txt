@@ -1,0 +1,64 @@
+			 load r7, @enter    	 ; r7 se ne koristi u programu pa je u njemu znak za novi red
+			 load r0, @upit     	 ; sprema u r0 poruku za upit
+			 echo r0				 ; ispis upita
+		  	 iinput @broj       	 ; trazi od korisnika unos broja
+		  	 jumpIfTrue @valjanUnos  ; inače prekid ako unos nije valjan
+		  	 load r0, @nijeBroj
+		  	 echo r0
+		  	 halt
+
+@valjanUnos: load r0, @broj     	 ; spremi unešeni broj u registar r0
+			 push r0            	 ; stavi r0 na stog
+			 call @fib          	 ; poziv potprograma za izracun fibonaccija
+			 increment r15      	 ; očisti stog
+			 echo r0            	 ; ispis rezultata
+@kraj:  	 halt;              	 ; kraj izvođenja programa
+
+
+#potprogram za rekurzivno računajne n-tog fibonaccijevog broja. Potprogram
+#preko stoga dobiva broj n, a preko registra r0 vraća rezultat
+
+@fib: 		 push r1            	; spremi kontekst na stog
+		 	 push r2
+		 	 push r3
+			 move r0, [r15+5]   	; preuzmi sa stoga n i spremi ga u r0
+
+@jeNula:	 move r1, 0         	; if(n==0)
+			 testEquals r1, r0
+			 jumpIfTrue @vratiNula
+
+@jeJedan:    move r1,1          	; if(n==1)
+			 testEquals r1,r0
+			 jumpIfTrue @vratiJedan
+
+#ako n nije niti 1 nit 0 potreban je sljedeći korak rekurzije
+#return fibonacci(n - 1) + fibonacci(n - 2);
+@dalje:      move r2, r0       		; u r0 se vraca rezultat stoga n premjestam u r2
+			 decrement r2      		; n=n-1
+			 push r2
+			 call @fib
+			 increment r15
+			 move r3, r0    	   ; premjesti rezultat od n-1 u r3
+			 decrement r2          ; n=n-2
+			 push r2
+			 call @fib
+			 increment r15
+			 add r0, r0,r3
+			 jump @povratak
+@vratiNula:  move r0,0
+			 jump @povratak
+@vratiJedan: move r0,1
+             jump @povratak
+@povratak:   pop r3             	; obnova konteksta
+             pop r2
+             pop r1
+			 ret                	; povratak iz potprograma
+
+
+@broj:		DEFINT 0				;broj kojeg korisnik unosi
+@upit:		DEFSTR "Unesite broj u intervalu 0 do 6 > " ; poruka pri upitu za unos broja
+@enter: 	DEFSTR "\n"				; znak za novi red
+@nijeBroj:  DEFSTR "Unos nije moguće parsirati u Integer."    ; poruka za ispis kada unos korisnika nije moguće parsirati
+			RESERVE:150				; rezerviramo 150 lokacija u memoriji
+@stackTop:	RESERVE					; rezerviramo još jednu, ukupno 151 lokacija; ova postaje vrh stoga
+

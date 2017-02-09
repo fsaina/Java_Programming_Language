@@ -1,0 +1,5 @@
+hr/fer/zemris/jsdemo/servlets/HtmlTagServlet.class
+hr/fer/zemris/jsdemo/servlets/ThumbnailServlet.class
+hr/fer/zemris/jsdemo/db/Picture.class
+hr/fer/zemris/jsdemo/servlets/ImageServlet.class
+hr/fer/zemris/jsdemo/db/PictureDB.class

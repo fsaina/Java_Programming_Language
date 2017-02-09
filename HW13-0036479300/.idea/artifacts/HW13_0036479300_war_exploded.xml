@@ -1,0 +1,24 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="HW13-0036479300:war exploded">
+    <output-path>$PROJECT_DIR$/target/webapp2</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="HW13-0036479300" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.1" />
+          <element id="library" level="project" name="Maven: org.glassfish.web:javax.servlet.jsp.jstl:1.2.1" />
+          <element id="library" level="project" name="Maven: org.jfree:jfreechart:1.0.19" />
+          <element id="library" level="project" name="Maven: org.jfree:jcommon:1.0.23" />
+          <element id="library" level="project" name="Maven: org.apache.poi:poi:3.14" />
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.10" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/webapp2/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="HW13-0036479300/web/Web" />
+    </root>
+  </artifact>
+</component>

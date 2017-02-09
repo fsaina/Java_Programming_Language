@@ -1,0 +1,7 @@
+1	The Beatles	https://www.youtube.com/watch?v=NCtzkaL2t_Y
+2	The Platters	https://www.youtube.com/watch?v=FyM8NVl4yBY
+3	The Beach Boys	https://www.youtube.com/watch?v=Eab_beh07HU
+4	The Four Seasons	https://www.youtube.com/watch?v=3pWBnodrR1M
+5	The Marcels	https://www.youtube.com/watch?v=qoi3TH59ZEs
+6	The Everly Brothers	https://www.youtube.com/watch?v=lTYe9eDqxe8
+7	The Mamas And The Papas	https://www.youtube.com/watch?v=N-aK6JnyFmk
